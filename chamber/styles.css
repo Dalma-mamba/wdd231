@@ -1,0 +1,67 @@
+.chamber-main {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.hero-panel {
+  background: linear-gradient(135deg, #0f2f4b, #2563eb);
+  color: white;
+  padding: 2rem 1.25rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.2);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #dbeafe;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: white;
+  color: #0f2f4b;
+}
+
+.btn-secondary {
+  background: #2563eb;
+  color: white;
+}
+
+.info-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #dbe5f0;
+  border-radius: 1rem;
+  padding: 1.1rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.card ul {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 720px) {
+  .hero-panel {
+    padding: 3rem 2rem;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
