@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const yearTarget = document.getElementById('currentyear');
-  const modifiedTarget = document.getElementById('lastModified');
-
-  if (yearTarget) {
-    yearTarget.textContent = new Date().getFullYear();
+  const currentYear = document.getElementById('currentyear');
+  if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
   }
 
-  if (modifiedTarget) {
-    modifiedTarget.textContent = document.lastModified;
+  const lastModified = document.getElementById('lastModified');
+  if (lastModified) {
+    lastModified.textContent = document.lastModified;
   }
 });

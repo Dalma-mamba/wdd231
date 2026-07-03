@@ -1,37 +1,34 @@
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 700px) {
   .site-header {
-    padding: 1rem 2rem;
+    padding: 1.25rem 0;
   }
 
-  .menu-toggle {
+  .menu {
     display: none;
   }
 
-  .primary-nav {
+  .main-nav {
+    position: static;
+  }
+
+  .main-nav ul {
     display: flex;
     position: static;
     flex-direction: row;
-    gap: 1.25rem;
+    gap: 0.25rem;
+    box-shadow: none;
+    border: 0;
     padding: 0;
     background: transparent;
-    border: 0;
-    box-shadow: none;
   }
 
-  .primary-nav a {
-    padding: 0.3rem 0.6rem;
-    border-radius: 999px;
+  .hero {
+    grid-template-columns: 1.4fr 0.9fr;
+    align-items: start;
   }
 
-  .primary-nav a:hover,
-  .primary-nav a:focus-visible,
-  .primary-nav a.active {
-    background: var(--accent-soft);
-    transform: none;
-  }
-
-  main {
-    padding: 2rem 2rem 3rem;
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .course-grid {

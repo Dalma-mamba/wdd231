@@ -1,10 +1,10 @@
-const toggleButton = document.querySelector('.menu-toggle');
-const primaryNav = document.querySelector('.primary-nav');
+const menuButton = document.querySelector('.menu');
+const mainNav = document.querySelector('.main-nav');
 
-if (toggleButton && primaryNav) {
-  toggleButton.addEventListener('click', () => {
-    const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
-    toggleButton.setAttribute('aria-expanded', String(!isExpanded));
-    primaryNav.classList.toggle('open');
+if (menuButton && mainNav) {
+  menuButton.addEventListener('click', () => {
+    const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!expanded));
+    mainNav.classList.toggle('open');
   });
 }
