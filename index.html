@@ -3,40 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 231 Home</title>
+    <title>Home | WDD 231 Portfolio</title>
     <meta
       name="description"
-      content="Home page for the WDD 231 course portfolio with project highlights and certificate courses."
+      content="A responsive home page for the WDD 231 course portfolio."
     />
     <meta name="author" content="Your Name" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/large.css" />
-    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="WDD 231 home page">
-        <img src="images/logo.svg" alt="Site logo" width="48" height="48" />
-        <span>WDD 231</span>
+      <a class="brand" href="index.html" aria-label="Go to home page">
+        <img src="images/site-logo.svg" alt="Site logo" />
+        <span>Dalma</span>
       </a>
-      <button class="menu" type="button" aria-expanded="false" aria-controls="primary-nav">
-        <span class="sr-only">Open navigation</span>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
         <span></span>
         <span></span>
         <span></span>
       </button>
       <nav id="primary-nav" class="main-nav" aria-label="Primary navigation">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="chamber/index.html">Chamber</a></li>
           <li><a href="final/index.html">Final</a></li>
         </ul>
@@ -44,76 +43,57 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-text">
-          <p class="eyebrow">BYU-Idaho · Web and Computer Programming</p>
-          <h1>Home</h1>
+      <h1>Home</h1>
+
+      <section class="hero card">
+        <div>
+          <h2>Welcome to WDD 231</h2>
           <p>
-            Welcome to my WDD 231 home page. This space highlights my course learning journey,
-            upcoming projects, and the certificate coursework I am building through this program.
+            This page introduces the course portfolio and highlights the Web and
+            Computer Programming certificate experience.
           </p>
         </div>
-        <div class="hero-card">
-          <h2>Learning Goals</h2>
+        <div class="hero-note">
+          <p>Focus:</p>
           <ul>
-            <li>Build responsive and accessible websites</li>
-            <li>Practice semantic HTML and modern CSS</li>
-            <li>Use JavaScript to create interactive content</li>
+            <li>Responsive web design</li>
+            <li>Accessible HTML and CSS</li>
+            <li>Interactive JavaScript</li>
           </ul>
         </div>
       </section>
 
-      <section class="content-section">
-        <h2>About the Course</h2>
+      <section class="card">
+        <h2>About this Course</h2>
         <p>
-          This course introduces front-end development fundamentals, including HTML structure,
-          responsive design, CSS layout, and JavaScript for interactivity. The projects here are
-          designed to reinforce those skills and create a polished portfolio experience.
+          The Web and Computer Programming certificate combines practical web
+          development, front-end scripting, and problem-solving. Building
+          thoughtful interfaces helps learners create useful digital products.
         </p>
       </section>
 
-      <section class="content-section">
-        <h2>Project Highlights</h2>
-        <div class="card-grid">
-          <article class="info-card">
-            <h3>Chamber Project</h3>
-            <p>A local business directory site that focuses on community engagement and navigation.</p>
-          </article>
-          <article class="info-card">
-            <h3>Final Project</h3>
-            <p>An end-of-course experience that combines layout, styling, and interactivity.</p>
-          </article>
-          <article class="info-card">
-            <h3>Course Portfolio</h3>
-            <p>Each week adds practical examples that build toward a complete web development portfolio.</p>
-          </article>
+      <section class="card">
+        <div class="section-head">
+          <h2>Certificate Courses</h2>
+          <div class="filter-buttons" role="group" aria-label="Course filters">
+            <button class="filter-btn active" data-filter="all">All Courses</button>
+            <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+            <button class="filter-btn" data-filter="CSE">CSE Courses</button>
+          </div>
         </div>
-      </section>
-
-      <section class="content-section">
-        <h2>Certificate Courses</h2>
-        <div class="filter-buttons" role="group" aria-label="Course filters">
-          <button class="filter-btn active" type="button" data-filter="all">All Courses</button>
-          <button class="filter-btn" type="button" data-filter="wdd">WDD Courses</button>
-          <button class="filter-btn" type="button" data-filter="cse">CSE Courses</button>
-        </div>
-        <div id="course-list" class="course-grid" aria-live="polite"></div>
-        <p id="credit-summary" class="credit-summary"></p>
+        <div id="courses-grid" class="courses-grid" aria-live="polite"></div>
+        <p class="credits-summary">Total credits: <span id="credits-total">0</span></p>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-group social-links">
-        <a href="https://github.com/yourusername/wdd231" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://www.byupathway.edu/" target="_blank" rel="noreferrer">BYU-Pathway</a>
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com/yourgithubusername/wdd231" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
       </div>
-      <div class="footer-group">
-        <p>&copy; <span id="currentyear"></span> Your Name | Idaho, USA</p>
-      </div>
-      <div class="footer-group">
-        <p>Last modified: <span id="lastModified"></span></p>
-      </div>
+      <p class="footer-meta">© <span id="currentyear"></span> Dalma | Eswatini</p>
+      <p class="footer-meta">07/02/2026: <span id="lastModified"></span></p>
     </footer>
   </body>
 </html>

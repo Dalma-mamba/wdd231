@@ -1,42 +1,51 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 760px) {
   .site-header {
-    padding: 1.25rem 0;
+    padding: 1.1rem 1.7rem;
   }
 
-  .menu {
+  .menu-toggle {
     display: none;
   }
 
   .main-nav {
-    position: static;
+    display: block;
+    width: auto;
+    margin-left: auto;
   }
 
   .main-nav ul {
-    display: flex;
-    position: static;
     flex-direction: row;
-    gap: 0.25rem;
-    box-shadow: none;
-    border: 0;
-    padding: 0;
+    gap: 0.75rem;
+  }
+
+  .main-nav a {
     background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .main-nav a:hover,
+  .main-nav a:focus-visible {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  main {
+    padding: 2rem 1.5rem 3rem;
   }
 
   .hero {
-    grid-template-columns: 1.4fr 0.9fr;
-    align-items: start;
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: center;
   }
 
-  .card-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .course-grid {
+  .courses-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .site-footer {
-    grid-template-columns: 1.2fr 1fr 1fr;
-    align-items: center;
+@media screen and (min-width: 1000px) {
+  .courses-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
