@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#82a66b" />
+  <path d="M30 84c8-20 24-30 34-30s26 10 34 30" fill="#fff" opacity="0.9" />
+  <circle cx="60" cy="46" r="16" fill="#fff" />
+  <text x="60" y="102" fill="#102a43" font-family="Inter, sans-serif" font-size="14" text-anchor="middle">Market</text>
+</svg>

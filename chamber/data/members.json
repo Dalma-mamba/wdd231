@@ -1,0 +1,81 @@
+{
+  "members": [
+    {
+      "name": "Peak Bakery & Café",
+      "address": "230 Alpine Avenue, Cascade",
+      "phone": "(208) 555-0123",
+      "website": "https://www.peakbakery.example",
+      "image": "member-peak-bakery.svg",
+      "membershipLevel": 3,
+      "category": "Artisan Bakery",
+      "email": "hello@peakbakery.example",
+      "hours": "Mon–Sat 7am–5pm"
+    },
+    {
+      "name": "Blue Peak Realty",
+      "address": "900 Market Street, Cascade",
+      "phone": "(208) 555-0456",
+      "website": "https://www.bluepeakrealty.example",
+      "image": "member-blue-peak.svg",
+      "membershipLevel": 2,
+      "category": "Real Estate Services",
+      "email": "contact@bluepeakrealty.example",
+      "hours": "Mon–Fri 9am–6pm"
+    },
+    {
+      "name": "Forest & Field Market",
+      "address": "66 Orchard Lane, Cascade",
+      "phone": "(208) 555-0789",
+      "website": "https://www.forestfield.example",
+      "image": "member-forest-field.svg",
+      "membershipLevel": 1,
+      "category": "Farmers Market",
+      "email": "info@forestfield.example",
+      "hours": "Sat–Sun 9am–2pm"
+    },
+    {
+      "name": "Clearwater Wellness",
+      "address": "17 Elm Court, Cascade",
+      "phone": "(208) 555-0114",
+      "website": "https://www.clearwaterwellness.example",
+      "image": "member-clearwater-wellness.svg",
+      "membershipLevel": 3,
+      "category": "Health & Wellness",
+      "email": "team@clearwaterwellness.example",
+      "hours": "Daily 8am–8pm"
+    },
+    {
+      "name": "Harbor Hardware Co.",
+      "address": "402 Dockside Road, Cascade",
+      "phone": "(208) 555-0225",
+      "website": "https://www.harborhardware.example",
+      "image": "member-harbor-hardware.svg",
+      "membershipLevel": 2,
+      "category": "Hardware Store",
+      "email": "support@harborhardware.example",
+      "hours": "Mon–Sat 8am–7pm"
+    },
+    {
+      "name": "Summit Solar Solutions",
+      "address": "58 Suncrest Avenue, Cascade",
+      "phone": "(208) 555-0307",
+      "website": "https://www.summitsolar.example",
+      "image": "member-summit-solar.svg",
+      "membershipLevel": 1,
+      "category": "Renewable Energy",
+      "email": "sales@summitsolar.example",
+      "hours": "Mon–Fri 8am–5pm"
+    },
+    {
+      "name": "Mountain View Logistics",
+      "address": "120 Riverfront Drive, Cascade",
+      "phone": "(208) 555-0448",
+      "website": "https://www.mountainviewlogistics.example",
+      "image": "member-mountain-view.svg",
+      "membershipLevel": 2,
+      "category": "Freight & Transport",
+      "email": "logistics@mountainview.example",
+      "hours": "24/7"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#d0853f" />
+  <path d="M34 38h52v54H34z" fill="#fff" opacity="0.92" />
+  <path d="M42 54h36v8H42z" fill="#d0853f" />
+  <path d="M42 70h24v8H42z" fill="#d0853f" />
+  <text x="60" y="104" fill="#102a43" font-family="Inter, sans-serif" font-size="14" text-anchor="middle">Hardware</text>
+</svg>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cascade Chamber Directory</title>
+    <meta name="description" content="Cascade Chamber of Commerce member directory with business listings, membership levels, and community resources." />
+    <meta name="author" content="Your Name" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cascade Chamber Directory" />
+    <meta property="og:description" content="Explore the Cascade Chamber member directory and find local businesses serving the community." />
+    <meta property="og:image" content="images/og-image.svg" />
+    <meta property="og:url" content="https://example.com/chamber/directory.html" />
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="brand-link">
+        <span class="brand-title">Cascade Chamber</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="pageTitle">
+        <div class="hero-copy">
+          <h1 id="pageTitle">Member Directory</h1>
+          <p>Browse active chamber members and choose the view that works best for you. Every listing includes contact details, membership status, and a direct website link.</p>
+        </div>
+        <div class="hero-actions">
+          <div class="view-controls" role="group" aria-label="Member view selection">
+            <button type="button" class="view-btn active" data-view="grid">Grid view</button>
+            <button type="button" class="view-btn" data-view="list">List view</button>
+          </div>
+          <p class="status-summary">Loading member directory…</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="directoryHeading">
+        <div class="section-head">
+          <h2 id="directoryHeading">Chamber members</h2>
+          <p>Use the directory to find local businesses offering products, services, and community leadership.</p>
+        </div>
+        <div id="memberGrid" class="member-grid grid-view"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-contact">
+        <p>Cascade Chamber of Commerce</p>
+        <p>WDD 231</p>
+      </div>
+      <div class="footer-meta">
+        <p id="currentYear"></p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+
+    <script src="js/directory.js"></script>
+  </body>
+</html>

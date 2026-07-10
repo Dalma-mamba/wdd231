@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#35607e" />
+  <circle cx="60" cy="48" r="24" fill="#fff" opacity="0.88" />
+  <path d="M42 62h36v18H42z" fill="#f6a560" />
+  <text x="60" y="102" fill="#fff" font-family="Inter, sans-serif" font-size="14" text-anchor="middle">Realty</text>
+</svg>
