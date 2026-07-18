@@ -5,8 +5,21 @@ const currentTemp = document.querySelector('#currentTemp');
 const weatherDescription = document.querySelector('#weatherDescription');
 const forecastList = document.querySelector('#forecast');
 const spotlightsContainer = document.querySelector('#spotlightGrid');
-
-const weatherApiKey = 'bYnGnI45tRfUPAZ5i03yX_I0JapYdxsSjjITxf6bN7P20R2gxPPeaY4Si34vfD';
+<head>
+  ...
+  <link rel="stylesheet" href="styles/large.css" /><head>
+  ...
+  <link rel="stylesheet" href="styles/large.css" /><head>
+  ...
+  <link rel="stylesheet" href="styles/large.css" /><head>
+  ...
+  <link rel="stylesheet" href="styles/large.css" /><head>
+  ...
+  <link rel="stylesheet" href="styles/large.css" /><head>
+  ...
+  <link rel="stylesheet" href="styles/large.css" />
+  <script src="scripts/home.js" defer></script>
+</head><script src="scripts/home.js" defer></script>const weatherApiKey = 'bYnGnI45tRfUPAZ5i03yX_I0JapYdxsSjjITxf6bN7P20R2gxPPeaY4Si34vfD';
 const weatherCity = 'Rexburg,US';
 const weatherBase = 'https://api.openweathermap.org/data/2.5';
 
