@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Cascade Chamber hero illustration</title>
+  <desc id="desc">A stylized cityscape with mountains, a business district, and community growth motif.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ddecf7" />
+      <stop offset="100%" stop-color="#f4f7fb" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)" rx="32" />
+  <circle cx="980" cy="130" r="70" fill="#f6a560" opacity="0.8" />
+  <path d="M0 460c120-70 210-97 320-80 80 12 140 50 230 48 90-1 150-40 220-64 86-28 160-24 230 2 70 27 118 39 200 14v320H0Z" fill="#90b5c7" />
+  <path d="M0 505c120-80 210-98 320-82 80 12 140 50 230 48 90-1 150-40 220-64 86-28 160-24 230 2 70 27 118 39 200 14v315H0Z" fill="#6d93a6" opacity="0.9" />
+  <rect x="170" y="320" width="140" height="190" rx="14" fill="#17486b" />
+  <rect x="320" y="260" width="170" height="250" rx="16" fill="#12324a" />
+  <rect x="510" y="345" width="90" height="165" rx="12" fill="#2a5f83" />
+  <rect x="620" y="300" width="110" height="210" rx="12" fill="#143f5e" />
+  <rect x="760" y="235" width="190" height="275" rx="16" fill="#0f283f" />
+  <rect x="960" y="365" width="95" height="145" rx="12" fill="#22567a" />
+  <path d="M755 350h110M495 330h120M265 390h65M345 355h58" stroke="#f6a560" stroke-width="12" stroke-linecap="round" />
+  <path d="M100 670h1000" stroke="#1b4967" stroke-width="10" stroke-linecap="round" opacity="0.35" />
+  <text x="96" y="120" fill="#0f283f" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">Cascade Chamber</text>
+  <text x="96" y="178" fill="#4a6270" font-family="Arial, Helvetica, sans-serif" font-size="26">Build your business. Strengthen your community.</text>
+</svg>

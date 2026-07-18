@@ -3,22 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chamber Project</title>
-    <link rel="stylesheet" href="../styles/small.css" />
-    <link rel="stylesheet" href="../styles/large.css" />
+    <title>Cascade Chamber | Home</title>
+    <meta name="description" content="Welcome to the Cascade Chamber of Commerce home page, featuring local events, community weather, and chamber member spotlights." />
+    <meta name="author" content="Your Name" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cascade Chamber | Home" />
+    <meta property="og:description" content="Join the Cascade Chamber to learn about business opportunities, community events, and chamber member spotlights." />
+    <meta property="og:image" content="images/og-image.svg" />
+    <meta property="og:url" content="https://example.com/chamber/index.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="../index.html">
-        <img src="../images/site-logo.svg" alt="Site logo" />
-        <span>Chamber Project</span>
+      <a href="index.html" class="brand-link">
+        <span class="brand-title">Cascade Chamber</span>
       </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <section class="card">
-        <h1>Chamber Project</h1>
-        <p>This placeholder page will be replaced with the Chamber of Commerce project in week 2.</p>
+
+    <main class="page-shell">
+      <section class="hero home-hero" aria-labelledby="homeTitle">
+        <div class="hero-copy">
+          <p class="eyebrow">Grow with your community</p>
+          <h1 id="homeTitle">Welcome to the Cascade Chamber</h1>
+          <p>We support local businesses with networking, leadership, and community initiatives that help our city thrive.</p>
+          <div class="hero-actions">
+            <a class="cta-button" href="join.html">Join the Chamber</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="images/cascade-hero.svg" alt="Illustration of the Cascade business district" />
+        </div>
+      </section>
+
+      <section class="home-grid" aria-label="Chamber home content">
+        <article class="info-card event-card">
+          <div class="section-head">
+            <h2>Current events</h2>
+            <p>Join upcoming chamber events that connect businesses, residents, and community leaders.</p>
+          </div>
+          <ul class="event-list">
+            <li>
+              <strong>Business Breakfast</strong>
+              <span>Thursday · 7:30 AM · Riverfront Hall</span>
+            </li>
+            <li>
+              <strong>Member Mixer</strong>
+              <span>Friday · 5:30 PM · Summit Plaza</span>
+            </li>
+            <li>
+              <strong>Community Growth Forum</strong>
+              <span>Saturday · 9:00 AM · City Center</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="info-card weather-card" aria-labelledby="weatherHeading">
+          <div class="section-head">
+            <h2 id="weatherHeading">Weather</h2>
+            <p id="weatherStatus">Loading local weather…</p>
+          </div>
+          <div class="weather-readout">
+            <p class="weather-temp"><span id="currentTemp">--</span><span class="unit">°F</span></p>
+            <p id="weatherDescription">Weather details are unavailable until the OpenWeatherMap API key is configured.</p>
+          </div>
+          <div id="forecast" class="forecast-grid"></div>
+        </article>
+      </section>
+
+      <section class="spotlight-section">
+        <div class="section-head">
+          <h2>Member spotlights</h2>
+          <p>Random chamber features highlighting silver and gold members serving the Cascades region.</p>
+        </div>
+        <div id="spotlightGrid" class="spotlight-grid"></div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-contact">
+        <p>Cascade Chamber of Commerce</p>
+        <p>WDD 231</p>
+      </div>
+      <div class="footer-meta">
+        <p id="currentYear"></p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+
+    <script src="scripts/home.js" defer></script>
   </body>
 </html>

@@ -10,14 +10,25 @@
   --shadow: 0 16px 40px rgba(16, 42, 67, 0.08);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--background);
   color: var(--text);
+  margin: 0;
 }
 
 img {
+  display: block;
+  max-width: 100%;
   border-radius: 1rem;
+}
+
+a {
+  color: inherit;
 }
 
 .sr-only {
@@ -68,6 +79,7 @@ img {
   border: 0;
   background: transparent;
   color: inherit;
+  cursor: pointer;
 }
 
 .menu-toggle span {
@@ -79,12 +91,20 @@ img {
 }
 
 .main-nav {
+  display: none;
   width: 100%;
+}
+
+.main-nav.open {
+  display: block;
 }
 
 .main-nav ul {
   display: grid;
   gap: 0.6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav a {
@@ -134,9 +154,147 @@ img {
 }
 
 .hero-actions {
+  margin-top: 1rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.1rem;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.eyebrow {
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0f283f;
+}
+
+.home-grid,
+.spotlight-grid,
+.member-grid {
   display: grid;
-  gap: 0.85rem;
-  align-items: start;
+  gap: 1rem;
+}
+
+.info-card,
+.spotlight-card,
+.member-card,
+.member-item {
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.section-head h2 {
+  margin-bottom: 0.4rem;
+}
+
+.section-head p {
+  margin-top: 0;
+  color: var(--muted);
+}
+
+.event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.event-list li {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(5, 12, 20, 0.12);
+}
+
+.event-list li:last-child {
+  border-bottom: 0;
+}
+
+.weather-readout {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.weather-temp {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.weather-temp .unit {
+  font-size: 1rem;
+}
+
+.forecast-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.forecast-item {
+  padding: 0.85rem;
+  border-radius: 0.9rem;
+  background: #edf4f8;
+}
+
+.forecast-item h3 {
+  margin: 0 0 0.25rem;
+}
+
+.forecast-item p {
+  margin: 0.15rem 0;
+}
+
+.spotlight-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.spotlight-logo {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #f0f4f8;
+}
+
+.spotlight-copy h3 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.spotlight-copy p {
+  margin: 0 0 0.7rem;
+  color: var(--muted);
+}
+
+.spotlight-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.8rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.spotlight-meta a {
+  color: #0f283f;
 }
 
 .view-controls {
@@ -165,17 +323,12 @@ img {
 }
 
 .member-grid {
-  display: grid;
   gap: 1rem;
 }
 
 .member-card,
 .member-item {
   padding: 1.2rem;
-  border-radius: 1.2rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
 }
 
 .member-card {
