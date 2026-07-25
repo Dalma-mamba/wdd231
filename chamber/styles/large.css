@@ -69,10 +69,3 @@
     grid-template-columns: 100px minmax(0, 1fr);
   }
 }
-
-@media (min-width: 768px) {
-    .join-layout {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-}
