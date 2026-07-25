@@ -32,18 +32,144 @@
       </nav>
     </header>
 
-    <main class="page-shell">
+    <main class="page-shell join-page">
       <section class="hero">
         <div class="hero-copy">
           <h1>Become a member</h1>
           <p>Join the chamber to gain visibility, build community partnerships, and connect with local businesses that support one another.</p>
         </div>
       </section>
-      <section class="card">
-        <h2>Membership starts here</h2>
-        <p>Membership information and application details will be added on the next project pass.</p>
-      </section>
+
+      <div class="join-layout">
+        <section class="panel panel-form" aria-labelledby="applicationHeading">
+          <div class="section-head">
+            <h2 id="applicationHeading">Membership application</h2>
+            <p>Complete the form below to request membership. We will follow up with the next steps shortly after submission.</p>
+          </div>
+
+          <form action="thankyou.html" method="get" class="membership-form">
+            <label>
+              <span>First name</span>
+              <input type="text" name="first-name" id="first-name" autocomplete="given-name" title="First name" required />
+            </label>
+
+            <label>
+              <span>Last name</span>
+              <input type="text" name="last-name" id="last-name" autocomplete="family-name" title="Last name" required />
+            </label>
+
+            <label>
+              <span>Business title</span>
+              <input type="text" name="title" id="title" autocomplete="organization-title" title="Organizational title" pattern="[A-Za-z\- ]{7,}" placeholder="Executive Director" />
+            </label>
+
+            <label>
+              <span>Email address</span>
+              <input type="email" name="email" id="email" autocomplete="email" title="Email address" placeholder="name@example.com" required />
+            </label>
+
+            <label>
+              <span>Mobile phone</span>
+              <input type="tel" name="phone" id="phone" autocomplete="tel" title="Mobile phone number" required />
+            </label>
+
+            <label>
+              <span>Business or organization name</span>
+              <input type="text" name="organization" id="organization" autocomplete="organization" title="Business or organization name" required />
+            </label>
+
+            <label>
+              <span>Membership level</span>
+              <select name="membership" id="membership" title="Membership level" required>
+                <option value="">Select a membership level</option>
+                <option value="np">NP Membership</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Business description</span>
+              <textarea name="description" id="description" title="Business description" rows="5"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp" />
+
+            <button type="submit" class="cta-button">Submit application</button>
+          </form>
+        </section>
+
+        <aside class="panel panel-memberships" aria-label="Membership levels">
+          <div class="section-head">
+            <h2>Membership levels</h2>
+            <p>Choose the level that best matches your organization's needs and visibility goals.</p>
+          </div>
+
+          <div class="membership-cards">
+            <article class="membership-card membership-card--np">
+              <h3>NP Membership</h3>
+              <p class="cost">Free</p>
+              <p>Perfect for nonprofit organizations looking for community engagement and local partnerships.</p>
+              <button type="button" class="modal-opener" data-target="modal-np">Learn more</button>
+            </article>
+
+            <article class="membership-card membership-card--bronze">
+              <h3>Bronze Membership</h3>
+              <p class="cost">$250/year</p>
+              <p>Includes member directory visibility, event invitations, and access to chamber networking tools.</p>
+              <button type="button" class="modal-opener" data-target="modal-bronze">Learn more</button>
+            </article>
+
+            <article class="membership-card membership-card--silver">
+              <h3>Silver Membership</h3>
+              <p class="cost">$500/year</p>
+              <p>Gain featured exposure, monthly spotlight placements, and preferred event registration rates.</p>
+              <button type="button" class="modal-opener" data-target="modal-silver">Learn more</button>
+            </article>
+
+            <article class="membership-card membership-card--gold">
+              <h3>Gold Membership</h3>
+              <p class="cost">$1,000/year</p>
+              <p>Enjoy premium advertising, leadership forums, and enhanced visibility across chamber communications.</p>
+              <button type="button" class="modal-opener" data-target="modal-gold">Learn more</button>
+            </article>
+          </div>
+        </aside>
+      </div>
     </main>
+
+    <dialog class="membership-modal" id="modal-np">
+      <div class="modal-content">
+        <h3>NP Membership</h3>
+        <p>Nonprofit groups receive community networking access, event announcements, and a featured profile in the chamber directory.</p>
+        <button type="button" class="modal-close">Close</button>
+      </div>
+    </dialog>
+
+    <dialog class="membership-modal" id="modal-bronze">
+      <div class="modal-content">
+        <h3>Bronze Membership</h3>
+        <p>Bronze members enjoy directory placement, resource sharing, and chamber event invites that help build new relationships.</p>
+        <button type="button" class="modal-close">Close</button>
+      </div>
+    </dialog>
+
+    <dialog class="membership-modal" id="modal-silver">
+      <div class="modal-content">
+        <h3>Silver Membership</h3>
+        <p>Silver members receive spotlight placement, discounted event access, and stronger promotional visibility across the site.</p>
+        <button type="button" class="modal-close">Close</button>
+      </div>
+    </dialog>
+
+    <dialog class="membership-modal" id="modal-gold">
+      <div class="modal-content">
+        <h3>Gold Membership</h3>
+        <p>Gold members unlock executive networking sessions, premium advertising, and leadership opportunities within the chamber community.</p>
+        <button type="button" class="modal-close">Close</button>
+      </div>
+    </dialog>
 
     <footer class="site-footer">
       <div class="footer-contact">
@@ -57,5 +183,6 @@
     </footer>
 
     <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
   </body>
 </html>
