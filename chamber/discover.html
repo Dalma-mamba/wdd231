@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the highlights, attractions, and local features of the North Shore area."
+    />
+    <meta name="author" content="Your Name" />
+    <title>Discover | North Shore Chamber</title>
+    <link rel="stylesheet" href="css/discover.css" />
+    <script type="module" src="scripts/discovery.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">North Shore Chamber</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html" aria-current="page">Discover</a>
+        <a href="mailto:info@northshorechamber.org">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Explore the community</p>
+          <h1>Discover what makes the North Shore a great place to live, visit, and do business.</h1>
+          <p>
+            These featured local attractions highlight the culture, scenery, and amenities that
+            make our region appealing to members and visitors alike.
+          </p>
+        </div>
+      </section>
+
+      <section class="visit-panel" aria-labelledby="visit-heading">
+        <h2 id="visit-heading">Visitor note</h2>
+        <p id="visit-message">Loading visit information...</p>
+      </section>
+
+      <section class="discover-section" aria-labelledby="discover-heading">
+        <div class="section-heading">
+          <h2 id="discover-heading">Points of interest</h2>
+          <p>Eight local highlights selected to showcase the character of our area.</p>
+        </div>
+        <div id="discover-gallery" class="discover-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> North Shore Chamber</p>
+    </footer>
+  </body>
+</html>
