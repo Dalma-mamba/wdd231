@@ -3,10 +3,6 @@
     padding: 1rem 2rem;
   }
 
-  .page-shell {
-    padding: 2rem 2.5rem;
-  }
-
   .menu-toggle {
     display: none;
   }
@@ -70,11 +66,10 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
 
 .discover-grid {
-  grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-areas:
     "card1 card1 card2"
     "card3 card4 card2"
