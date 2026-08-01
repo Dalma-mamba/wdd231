@@ -3,22 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Final Project</title>
-    <link rel="stylesheet" href="../styles/small.css" />
-    <link rel="stylesheet" href="../styles/large.css" />
+    <meta
+      name="description"
+      content="North Shore Adventure Hub helps visitors explore curated trails, travel tips, and outdoors planning."
+    />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content="North Shore Adventure Hub" />
+    <meta
+      property="og:description"
+      content="Explore outdoor trails, local tips, and trip ideas for your next shoreline adventure."
+    />
+    <meta property="og:type" content="website" />
+    <title>Home | North Shore Adventure Hub</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/main.js"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header class="site-header">
-      <a class="brand" href="../index.html">
-        <img src="../images/site-logo.svg" alt="Site logo" />
-        <span>Final Project</span>
-      </a>
+      <a class="brand" href="index.html">North Shore Adventure Hub</a>
+      <nav aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Open menu</span>
+          <span aria-hidden="true">☰</span>
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <section class="card">
-        <h1>Final Project</h1>
-        <p>This placeholder page will be replaced with the final project in week 6.</p>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Discover the shore</p>
+          <h1>Plan your next outdoor escape with trusted local insight.</h1>
+          <p>
+            Browse curated routes, compare trail styles, and save your preferred
+            experience for later.
+          </p>
+          <a class="button" href="#trail-list">Browse trails</a>
+        </div>
+        <img
+          src="images/hero-illustration.svg"
+          alt="Illustration of a mountain trail and compass"
+          loading="eager"
+          width="600"
+          height="480"
+        />
       </section>
+
+      <section class="controls" aria-label="Trail filters">
+        <label for="trail-filter">Trail style</label>
+        <select id="trail-filter">
+          <option value="all">All adventures</option>
+          <option value="Family">Family</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Scenic">Scenic</option>
+          <option value="Wildlife">Wildlife</option>
+          <option value="Water">Water</option>
+        </select>
+        <p id="filter-status" class="status" aria-live="polite"></p>
+      </section>
+
+      <section class="section" aria-labelledby="trail-heading">
+        <div class="section-heading">
+          <h2 id="trail-heading">Featured trails</h2>
+          <p>
+            Each route below is loaded from a local data file and rendered
+            dynamically with JavaScript.
+          </p>
+        </div>
+        <div id="trail-list" class="card-grid"></div>
+      </section>
+
+      <section class="section" aria-labelledby="insight-heading">
+        <div class="section-heading">
+          <h2 id="insight-heading">Why this site works</h2>
+        </div>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Local data</h3>
+            <p>Trail details are fetched asynchronously and rendered for visitors.</p>
+          </article>
+          <article class="info-card">
+            <h3>Accessible design</h3>
+            <p>Buttons, menus, and dialogs are built with keyboard-friendly patterns.</p>
+          </article>
+          <article class="info-card">
+            <h3>Saved preferences</h3>
+            <p>Your selected trail style is remembered in local storage.</p>
+          </article>
+        </div>
+      </section>
+
+      <div
+        id="trail-modal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        hidden
+      >
+        <div class="modal-dialog">
+          <button class="modal-close" type="button" aria-label="Close details">
+            ×
+          </button>
+          <h3 id="modal-title"></h3>
+          <p id="modal-body"></p>
+        </div>
+      </div>
     </main>
+
+    <footer class="site-footer">
+      <p>© 2026 North Shore Adventure Hub</p>
+      <nav aria-label="Footer links">
+        <a href="attributions.html">Attributions</a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener"
+          >Watch demo video</a
+        >
+      </nav>
+    </footer>
   </body>
 </html>
