@@ -15,8 +15,8 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--text);
-  background: var(--surface);
+  color: #17222b;
+  background: #f7f8fb;
   line-height: 1.6;
 }
 
@@ -27,18 +27,18 @@ img {
 }
 
 a {
-  color: var(--primary);
+  color: #0f4c81;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: var(--accent);
+  color: #ec8b2d;
 }
 
 .site-header,
 .site-footer {
-  background: var(--primary-dark);
+  background: #0b355d;
   color: #fff;
 }
 
@@ -73,11 +73,11 @@ a:focus {
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  background: linear-gradient(135deg, #0f4c81, #0b355d);
   color: #fff;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: var(--shadow);
+  box-shadow: 0 10px 25px rgba(15, 76, 129, 0.12);
 }
 
 .eyebrow {
@@ -96,16 +96,16 @@ a:focus {
 .visit-panel,
 .discover-section {
   background: #fff;
-  border: 1px solid var(--border);
+  border: 1px solid #d2dae3;
   border-radius: 1rem;
   padding: 1.25rem;
-  box-shadow: var(--shadow);
+  box-shadow: 0 10px 25px rgba(15, 76, 129, 0.12);
 }
 
 .visit-panel h2,
 .section-heading h2 {
   margin-top: 0;
-  color: var(--primary-dark);
+  color: #0b355d;
 }
 
 .discover-grid {
@@ -124,16 +124,16 @@ a:focus {
 
 .discover-card {
   padding: 1rem;
-  border: 1px solid var(--border);
+  border: 1px solid #d2dae3;
   border-radius: 0.9rem;
-  background: var(--surface);
+  background: #f7f8fb;
 }
 
 .discover-card h2 {
   margin-top: 0;
   margin-bottom: 0.6rem;
   font-size: 1.15rem;
-  color: var(--primary-dark);
+  color: #0b355d;
 }
 
 .discover-card figure {
@@ -156,7 +156,7 @@ a:focus {
 .discover-card button {
   margin-top: 0.8rem;
   border: 0;
-  background: var(--accent);
+  background: #ec8b2d;
   color: #fff;
   padding: 0.7rem 0.9rem;
   border-radius: 999px;
@@ -165,7 +165,7 @@ a:focus {
 
 .discover-card button:hover,
 .discover-card button:focus {
-  background: var(--primary);
+  background: #0f4c81;
 }
 
 .site-footer {
