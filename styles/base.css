@@ -1,0 +1,39 @@
+:root {
+  --primary: #1f4d3b;
+  --secondary: #c7d7a6;
+  --accent: #d97b4b;
+  --background: #f7f3ea;
+  --surface: #fffdf7;
+  --text: #1f2321;
+  --border: #8e988e;
+  --body-font: "Inter", Arial, sans-serif;
+  --heading-font: "Playfair Display", Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--background);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+}
