@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact page for the three-page website.">
-    <meta name="author" content="Your Name">
-    <title>Contact Us</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact North Shore Adventure Hub for trail updates, gear advice, and local outdoor events."
+    />
+    <title>Contact | North Shore Adventure Hub</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">North Shore Adventure Hub</a>
+      <nav aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Open menu</span>
+          ☰
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-        <h2>Get in Touch</h2>
-        <form action="thank-you.html" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Submit</button>
+      <section class="hero">
+        <h1>Contact Us</h1>
+        <p>
+          Have questions about trails, gear, or local outdoor events? Reach out
+          and we will be happy to help.
+        </p>
+      </section>
+
+      <section class="contact-grid">
+        <div class="contact-card">
+          <h2>Get in Touch</h2>
+          <p>
+            North Shore Adventure Hub<br />
+            123 Lakefront Drive<br />
+            Portside, WA 98210
+          </p>
+          <p>
+            <a href="mailto:hello@northshoreadventurehub.com"
+              >hello@northshoreadventurehub.com</a
+            >
+          </p>
+        </div>
+
+        <form class="contact-form" action="thanks.html" method="get">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit">Send Message</button>
         </form>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-        <p><a href="video-demonstration-link">Watch our video demonstration</a></p>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 North Shore Adventure Hub</p>
     </footer>
-    <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
